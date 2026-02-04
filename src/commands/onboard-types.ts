@@ -32,6 +32,8 @@ export type AuthChoice =
   | "opencode-zen"
   | "github-copilot"
   | "copilot-proxy"
+  | "ollama"
+  | "ollama-api"
   | "qwen-portal"
   | "skip";
 export type GatewayAuthChoice = "token" | "password";

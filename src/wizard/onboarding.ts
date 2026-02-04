@@ -260,6 +260,12 @@ export async function runOnboardingWizard(
       }
       return "Password";
     };
+    const formatModel = (value: string) => {
+      if (value.startsWith("ollama")) {
+        return "Ollama (Local)";
+      }
+      return value;
+    };
     const formatTailscale = (value: "off" | "serve" | "funnel") => {
       if (value === "off") {
         return "Off";
